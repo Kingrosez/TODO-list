@@ -1,0 +1,19 @@
+h1 {
+  font-size: 45px;
+  font-weight: 700px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-custom {
+  min-width: 100px;
+}
+
+.row-custom {
+  margin-top: 20px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+}
