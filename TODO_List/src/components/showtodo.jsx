@@ -1,21 +1,19 @@
-function ShowTODO({ items }) {
-  let name = "fairoz";
-  let date = "2019-8-31";
-
+import { AiTwotoneDelete } from "react-icons/ai";
+function ShowTODO({ items, deleteData }) {
   return (
     <>
       <div className="container ">
         {items.map((item) => (
-          <div className="row row-custom">
-            <div key={name} className="col-6">
-              {item.name}
-            </div>
-            <div key={date} className="col-4">
-              {item.date}
-            </div>
+          <div key={item.name} className="row row-custom">
+            <div className="col-6">{item.name}</div>
+            <div className="col-4">{item.date}</div>
             <div className="col-2">
-              <button type="button" className="btn btn-danger btn-custom">
-                delete
+              <button
+                type="button"
+                className="btn btn-danger btn-custom"
+                onClick={() => deleteData(item)}
+              >
+                <AiTwotoneDelete />
               </button>
             </div>
           </div>
